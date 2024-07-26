@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "5741d23e-82d1-4b34-98f3-8ee4a57928b3",
+		"name": "Mattos Teste",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37260861"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/estrategiaWMS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dsEstrategia\": \"RETIRA\",\r\n  \"nrPrioridade\": 10,\r\n  \"horarios\": [\r\n    {\r\n      \"dsHorarioInicio\": \"09:00\",\r\n      \"dsHorarioFinal\": \"10:00\",\r\n      \"nrPrioridade\": 40\r\n    },\r\n    {\r\n      \"dsHorarioInicio\": \"10:01\",\r\n      \"dsHorarioFinal\": \"11:00\",\r\n      \"nrPrioridade\": 30\r\n    },\r\n    {\r\n      \"dsHorarioInicio\": \"11:01\",\r\n      \"dsHorarioFinal\": \"12:00\",\r\n      \"nrPrioridade\": 20\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/estrategiaWMS"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/estrategiaWMS/1/10/30/prioridade",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/estrategiaWMS/1/10/30/prioridade"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/estrategiaWMS/1/9/30/prioridade",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/estrategiaWMS/1/9/30/prioridade"
+			},
+			"response": []
+		}
+	]
+}
