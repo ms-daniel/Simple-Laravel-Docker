@@ -21,6 +21,7 @@ class AppServiceProvider extends ServiceProvider
                 $app->make(EstrategiaWmsHorarioPrioridade::class)
             );
         });
+
     }
 
     /**
