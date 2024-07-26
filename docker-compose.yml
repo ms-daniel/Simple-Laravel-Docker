@@ -1,6 +1,6 @@
 version: '3'
 services:
-  web:
+  api:
     restart: always
     build: .
     volumes:
@@ -25,4 +25,4 @@ services:
     volumes:
       - ./:/var/www
     depends_on:
-      - web
+      - api
